@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="moe.shizuku.manager.permission.API" />
+
+    <application>
+        <!--
+          ${applicationId} is a Gradle manifest placeholder, resolved at
+          merge time to whatever app module ends up depending on this
+          library (com.gamespacepro today) — not hardcoded here on purpose,
+          so this module stays reusable as-is if the app ID ever changes.
+        -->
+        <provider
+            android:name="rikka.shizuku.ShizukuProvider"
+            android:authorities="${applicationId}.shizuku"
+            android:multiprocess="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    </application>
+
+</manifest>
