@@ -1,0 +1,16 @@
+<resources>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_shizuku_card_title">Shizuku</string>
+    <string name="dashboard_accessibility_card_title">Accessibility</string>
+    <string name="dashboard_refresh_action">Refresh</string>
+    <string name="dashboard_request_permission_action">Request permission</string>
+    <string name="dashboard_open_settings_action">Open settings</string>
+
+    <string name="shell_capability_unavailable">Not installed or not running</string>
+    <string name="shell_capability_permission_required">Permission not yet granted</string>
+    <string name="shell_capability_permission_denied">Permission denied — tap to try again</string>
+    <string name="shell_capability_ready">Ready</string>
+
+    <string name="accessibility_capability_disabled">Not enabled — tap to open settings</string>
+    <string name="accessibility_capability_enabled">Enabled</string>
+</resources>
