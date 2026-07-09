@@ -1,4 +1,0 @@
-<resources>
-    <string name="accessibility_service_label">Game Space : AT TOOL</string>
-    <string name="accessibility_service_description">Detects which app is currently in the foreground so Game Space : AT TOOL can apply per-game settings automatically. Does not read screen content.</string>
-</resources>
