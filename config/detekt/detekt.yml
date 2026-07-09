@@ -1,0 +1,21 @@
+# Overrides applied on top of detekt's default rule set (buildUponDefaultConfig = true
+# in build.gradle.kts). Only deviations from the defaults need to be listed here —
+# everything not mentioned keeps detekt's built-in default.
+
+complexity:
+  TooManyFunctions:
+    # Feature modules will accumulate ViewModels/composables; the default
+    # threshold (11) is too aggressive for a Compose screen file. Revisit
+    # per-module if this proves too loose once feature_* modules exist.
+    thresholdInFiles: 20
+
+style:
+  MagicNumber:
+    # Compose layout code is full of legitimate magic numbers (padding,
+    # sizes) that don't warrant a named constant. Test files too.
+    excludes: ['**/test/**', '**/androidTest/**']
+    ignoreAnnotated: ['Composable']
+
+naming:
+  # Product spec's Kotlin style guide already covers this; keep default
+  # naming rules as-is — no overrides.
