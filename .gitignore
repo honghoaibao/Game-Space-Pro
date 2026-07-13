@@ -1,0 +1,18 @@
+*.iml
+.gradle/
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.keystore
+*.jks
+release.keystore
+# Ngoại lệ: debug.keystore CỐ ĐỊNH cần commit để mọi build debug (máy local + CI) ký cùng
+# 1 key — nếu không, mỗi nơi tự sinh keystore debug riêng và APK debug build ở nơi khác
+# nhau không update lẫn nhau được (INSTALL_FAILED_UPDATE_INCOMPATIBLE). KHÔNG áp dụng cho
+# release.keystore thật (vẫn bị ignore ở trên).
+!keystore/debug.keystore
