@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">Game Space</string>
-    <string name="accessibility_service_description">Game Space dùng dịch vụ trợ năng để phát hiện game đang mở và hộp thoại hệ thống, giúp tự động áp Profile hiệu năng. Không thu thập hay gửi dữ liệu ra ngoài thiết bị.</string>
-</resources>
